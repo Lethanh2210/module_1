@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function checkSubStr(str1,str2){
+      let m = str1.length;
+      let n = str2.length;
+      let j;
+      for (let i = 0; i <= n - m; i++) {
+          for (j = 0; j < m; j++)
+              if (str2[i + j] !== str1[j]) {
+                  break;
+              }
+          if (j === m)
+              return true;
+      }
+
+      return false;
+  }
+
+</script>
+</body>
+</html>
