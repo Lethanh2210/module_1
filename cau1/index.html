@@ -16,7 +16,17 @@
                 }
             }
         }
-        return arr[arr.length-3];
+        let count = 0;
+        for (let i = 0; i <= 2; i++) {
+            arr.length = arr.length - count;
+            count = 0;
+            for (let j = arr.length-1; j >= 0; j--) {
+                if(arr[j] === arr[arr.length-1]){
+                    count++;
+                }
+            }
+        }
+        return arr[arr.length-1];
     }
 
 </script>
